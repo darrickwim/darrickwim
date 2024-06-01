@@ -1,0 +1,17 @@
+    root = CreatTree(array,size);
+  printLine(root);  
+  
+    printf("\n");
+  return 0;
+}
+  
+int printLine(BTree * root)
+{
+  BTree * queue[size], *p;
+  int front,rear;
+  front = rear = 0;
+    
+    
+    
+  rear = (rear+1)%size;
+  queue[rear] = root; 
