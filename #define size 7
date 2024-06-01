@@ -1,0 +1,12 @@
+typedef struct node
+{
+  int data;
+  struct node *left;
+  struct node *right;
+}BTree;
+  
+int printLine(BTree * root);
+BTree * CreatTree(int a[],int n);
+  
+int main(void)
+{
