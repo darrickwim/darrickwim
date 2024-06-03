@@ -1,0 +1,8 @@
+printf(":");
+for(int num=0; num<retData->dataLenght; num++)
+    printf("0x%02X ", *(retData->data+num));
+printf("\n");
+printf(":");
+for(int num=0; num<mData->dataLenght; num++)
+    printf("%c ",*(mData->data+num));
+printf("\n");
