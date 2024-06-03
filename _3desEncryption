@@ -1,0 +1,7 @@
+unsigned char key[24] = {'1','2','3','4','5','6','7','8', 0x34, 0x45, 0xA4, 0x34, 0x45, 0xA4, 0x45, 0xA4, 0x45, 0xA4, 0x34, 0x45, 0x45, 0xA4, 0x34, 0x45,};
+unsigned char _data[33] = {'1','2','3','4','5','6', '7', '8', '1','2','3','4','5','6', '7', '8',
+'1','2','3','4','5','6', '7', '8','1','2','3','4','5','6', '7', '8', '1'
+};
+p_desRetStruct retData = _3desEncryption(_data, 33, key, 24, NOPADDING);
+p_desRetStruct mData = _3desDecrypt(retData->data, retData->dataLenght, key, 24, NOPADDING);
+p
